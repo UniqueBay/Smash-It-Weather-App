@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body, main {
+    height: 100vh;
+    background: sandybrown;
+}
+
+
+body {
+    color: sandybrown;
+    width: 100vw;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: calc(100vw - 15px);
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px #c4c4c4, -1px -1px 3px #c4c4c4;
+    box-shadow: 1px 1px 5px #a1a1a1, -1px -1px 5px #a1a1a1;
+    overflow-x: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;    
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #008080;
+    padding: 20px 0;
+}
+
+header {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 1.3em;   
+}
+
+div.weather-area {
+    background: #0eaaaa;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 20px 0;
+    box-shadow: 1px 1px 5px #727272;
+    /*height: fit-content;*/
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+section.welcome, section.loader {
+    height: 248px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.welcome, section.loader {
+    justify-content: space-around;
+}
+
+section.loader {
+    height: 0px;
+    overflow: hidden;
+}
+
+svg.cloud-svg {
+    width: 150px;
+    height: 150px;
+}
+
+svg.ripple-svg {
+    width: 200px;
+    height: 200px;
+    padding: 0 0 10px 0;
+}
+
+section.main {
+    height: 0px;
+    overflow: hidden;
+}
+
+header input {
+    max-width: 280px;
+    color: rgb(82, 82, 82);
+    border-bottom: 2px solid #008080;
+    font-size: 1.4em;
+    padding: 5px 0 5px 5px;
+    outline: none;
+}
+
+.header {
+    margin: 0 0 20px 0;
+}
+
+
+.location, .current{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location .city {
+    font-size: 1.6em;
+    margin: 0 0 5px 0;
+}
+
+.location .date {
+    font-size: 0.9em;
+}
+
+.current .temp {
+    font-size: 5em;
+    font-weight: bold;
+    text-shadow: 2px 3px rgb(1, 105, 105, 0.8);
+}
+
+.current .temp span{
+    font-weight: 500;
+}
+
+.current .weather {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-shadow: 0px 2px rgb(1, 105, 105, 0.4);
+    margin: -18px 0 0 0;
+}
+
+.current .icon {
+    width: 100px;
+    height: 104px;
+    margin: -18px 0 0 0;
+}
+
+.message {
+    max-width: 70%;
+}
